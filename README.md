@@ -1,2 +1,2 @@
-# iclick2.github.io
+# iclick
 My blog website
