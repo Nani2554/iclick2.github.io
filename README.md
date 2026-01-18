@@ -1,2 +1,2 @@
-# iclick
-My blog website
+# games
+My games
