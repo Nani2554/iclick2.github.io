@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#00f7ff">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FuturePlay – Games Hub</title>
+
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#00f7ff">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: radial-gradient(circle at top, #101a3d, #0a0f1f);
+      color: #eafcff;
+      text-align: center;
+    }
+
+    header {
+      padding: 20px;
+      font-size: 1.8rem;
+      text-shadow: 0 0 10px #00f7ff;
+    }
+
+    .games {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.08);
+      padding: 20px;
+      border-radius: 20px;
+      border: 1px solid rgba(255,255,255,0.15);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 0 20px #00f7ff;
+    }
+
+    button {
+      padding: 10px 18px;
+      border-radius: 20px;
+      border: none;
+      background: #00f7ff;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    footer {
+      padding: 15px;
+      font-size: 0.9rem;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+
+<body>
+  <header>🎮 FuturePlay – Mini Games</header>
+
+  <div class="games">
+    <div class="card">
+      <h2>Puzzle Game</h2>
+      <p>Logic-based number puzzle.</p>
+      <button onclick="alert('Puzzle game coming soon')">Play</button>
+    </div>
+
+    <div class="card">
+      <h2>Snake Game</h2>
+      <p>Classic snake with neon style.</p>
+      <button onclick="alert('Snake game coming soon')">Play</button>
+    </div>
+
+    <div class="card">
+      <h2>Ludo</h2>
+      <p>Board game UI demo.</p>
+      <button onclick="alert('Ludo coming soon')">Play</button>
+    </div>
+  </div>
+
+  <footer>© 2026 FuturePlay</footer>
+
+  <!-- Service Worker -->
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("sw.js");
+    }
+  </script>
+<footer>        <div class="footer-container">
+            <span class="copyright">© 27/7 News</span>
+            <div class="footer-links">
+                <a href="about.html">Terms</a>
+                <a href="privacy.html" >Privacy</a>
+                <a href="contact.html">Contact</a>
+            </div>
+</footer>
+</body>
+</html>
